@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alexwang177/smart-contract-latency/issues"
   },
-  "homepage": "https://github.com/alexwang177/smart-contract-latency#readme"
+  "homepage": "https://github.com/alexwang177/smart-contract-latency#readme",
+  "devDependencies": {
+    "hardhat": "^2.9.2"
+  }
 }
