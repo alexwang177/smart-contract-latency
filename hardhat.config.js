@@ -17,6 +17,15 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
+
+const { alchemyApiKeyRopsten, alchemyApiKeyRinkeby, alchemyApiKeyGoerli, mnemonic, mnemonic_2 } = require('./secrets.json');
+
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    ropsten: {
+      url: `https://eth-ropsten.alchemyapi.io/v2/${alchemyApiKeyRopsten}`,
+      accounts: { mnemonic: mnemonic },
+     },
+    }
 };
